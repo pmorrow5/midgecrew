@@ -1,0 +1,17 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <html>
+        <head>
+            <title>Midge Crew</title>
+        </head>
+        <body>
+            <h1>{{ title }}</h1>
+            <p id="countdown"></p>
+        </body>
+    </html>
+    {% load staticfiles %}
+    <script src="{% static 'js/countdown.js' %}"></script>
+{% endblock %}
